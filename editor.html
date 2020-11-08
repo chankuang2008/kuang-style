@@ -11,21 +11,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.28.1/react-bootstrap.js"></script>
-<script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
+<script src="https://cdn.ckeditor.com/4.15.0/full-all/ckeditor.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
 <link rel="stylesheet" href="./css/kuang-style.css"/>
 <style>
-.ck-editor__editable_inline {min-height: 500px;}
 </style>
 <script>
 $( document ).ready(function() {
-  ClassicEditor
-  .create( document.querySelector('#editor') )
-  .catch( error => {
-    console.error( error );
-  });
+  CKEDITOR.replace( 'editor', {height: '580px'});
 });
 </script>
 <style>
@@ -59,7 +54,7 @@ footer {position: fixed; bottom: 0px;}
 <div class="col-12 col-sm-12">
 
 <div class="body-container">
-  <div id="editor"></div>
+  <div name="editor"></div>
 </div>
 
 </div>
