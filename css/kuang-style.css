@@ -72,3 +72,13 @@ footer {
 .highlight {
   color: #ff5754;
 }
+ul.category-list li {
+  margin:0 0 10px 0;
+}
+.title {
+  display: block;
+  font-size: 2rem;
+  color: #ff5754;
+  margin-bottom: 15px;
+  text-decoration: none !important;
+}

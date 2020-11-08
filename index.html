@@ -74,10 +74,10 @@ ReactDOM.render(
 
 <div className="body-container">
   <h6>Category</h6>
-  <ul>
-  <li><a href="javascript:void(0)"> Jab </a></li>
-  <li><a href="javascript:void(0)"> Cross </a></li>
-  <li><a href="javascript:void(0)"> Hook </a></li>
+  <ul className="category-list">
+  <li><a href="#a1"> Jab </a></li>
+  <li><a href="#a1"> Cross </a></li>
+  <li><a href="#a2"> Hook </a></li>
   </ul>
 </div>
 
@@ -85,13 +85,13 @@ ReactDOM.render(
 <div className="col-12 col-sm-9">
 
 <div className="body-container">
-  <h2 className="highlight">石堂 夏央 Natsuo Ishido</h2>
+  <a href="javascript:void(0)" className="title">石堂 夏央 Natsuo Ishido</a>
   <img src="./img/ic-001.png" width="400" alt="icon-001" /><br />
   <img src="./img/ic-002.jpg" width="400" alt="icon-002" /><br /><br />
   <a href="javascript:void(0)">『鉄風』石堂夏央</a><br />
 </div>
-<div className="body-container">
-  <h2 className="highlight">Boxing styles and technique (1) </h2><br />
+<div id="a1" className="body-container">
+  <a href="javascript:void(0)" className="title">Boxing styles and technique (1)</a>
   <h5>Jab</h5>
   <ul>
   <li>Flicker jab</li>
@@ -108,8 +108,8 @@ ReactDOM.render(
   <li>A cross in counterpunch (cross-counter)</li>
   </ul>
 </div>
-<div className="body-container">
-  <h2 className="highlight">Boxing styles and technique (2) </h2><br />
+<div id="a2" className="body-container">
+  <a href="javascript:void(0)" className="title">Boxing styles and technique (2)</a>
   <h5>Hook</h5>
   <ul>
   <li>A hook</li>
