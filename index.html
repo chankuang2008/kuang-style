@@ -11,10 +11,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.3/react-dom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.28.1/react-bootstrap.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/23.1.0/classic/ckeditor.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
 <link rel="stylesheet" href="./css/kuang-style.css"/>
+<style>
+.ck-editor__editable_inline {min-height: 200px;}
+</style>
 </head>
 <body>
 <div id="roof"></div>
@@ -90,6 +94,7 @@ ReactDOM.render(
   <img src="./img/ic-002.jpg" width="400" alt="icon-002" /><br /><br />
   <a href="javascript:void(0)">『鉄風』石堂夏央</a><br />
 </div>
+
 <div id="a1" className="body-container">
   <a href="javascript:void(0)" className="title">Boxing styles and technique (1)</a>
   <h5>Jab</h5>
@@ -108,6 +113,7 @@ ReactDOM.render(
   <li>A cross in counterpunch (cross-counter)</li>
   </ul>
 </div>
+
 <div id="a2" className="body-container">
   <a href="javascript:void(0)" className="title">Boxing styles and technique (2)</a>
   <h5>Hook</h5>
@@ -117,6 +123,11 @@ ReactDOM.render(
   <li>Another hook</li>
   <li>Left hook in medium range</li>
   </ul>
+</div>
+
+<div className="body-container">
+  <a href="javascript:void(0)" className="title">Editor</a>
+  <div id="editor"></div>
 </div>
 
 </div>
@@ -134,4 +145,10 @@ ReactDOM.render(
 </div>,
   document.getElementById('roof')
 )
+
+ClassicEditor
+.create( document.querySelector('#editor') )
+.catch( error => {
+  console.error( error );
+});
 </script>

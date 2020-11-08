@@ -69,6 +69,10 @@ footer {
   color: #ff5754;
   text-align: center;
 }
+.form-control:focus {
+  border-color: #ffb6b4;
+  box-shadow: 0 0 0 1px #ffb6b4;
+}
 .highlight {
   color: #ff5754;
 }
