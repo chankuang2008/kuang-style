@@ -16,9 +16,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
 <link rel="stylesheet" href="./css/kuang-style.css"/>
-<style>
-.ck-editor__editable_inline {min-height: 200px;}
-</style>
 </head>
 <body>
 <div id="roof"></div>
@@ -40,21 +37,25 @@ ReactDOM.render(
     <ul className="navbar-nav mr-auto">
 
     <li className="nav-item dropdown">
-    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">item-1</a>
+    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Item-1</a>
     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-      <a className="dropdown-item" href="javascript:void(0)">sub-item-1</a>
-      <a className="dropdown-item" href="javascript:void(0)">sub-item-2</a>
+      <a className="dropdown-item" href="javascript:void(0)">Sub-item-1</a>
+      <a className="dropdown-item" href="javascript:void(0)">Sub-item-2</a>
       <div className="dropdown-divider"></div>
-      <a className="dropdown-item" href="javascript:void(0)">sub-item-3</a>
+      <a className="dropdown-item" href="javascript:void(0)">Sub-item-3</a>
     </div>
     </li>
 
     <li className="nav-item">
-    <a className="nav-link" href="javascript:void(0)">item-2</a>
+    <a className="nav-link" href="./editor.html">Editor</a>
     </li>
 
     <li className="nav-item">
-    <a className="nav-link" href="javascript:void(0)">item-3</a>
+    <a className="nav-link" href="javascript:void(0)">Item-2</a>
+    </li>
+
+    <li className="nav-item">
+    <a className="nav-link" href="javascript:void(0)">Item-3</a>
     </li>
 
     </ul>
@@ -125,11 +126,6 @@ ReactDOM.render(
   </ul>
 </div>
 
-<div className="body-container">
-  <a href="javascript:void(0)" className="title">Editor</a>
-  <div id="editor"></div>
-</div>
-
 </div>
 </div>
 
@@ -145,10 +141,4 @@ ReactDOM.render(
 </div>,
   document.getElementById('roof')
 )
-
-ClassicEditor
-.create( document.querySelector('#editor') )
-.catch( error => {
-  console.error( error );
-});
 </script>
